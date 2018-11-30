@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.pluralsight.repository.HibernateCustomerRepositoryImpl"/>
+<fullyQualifiedTypeName name="com.pluralsight.model.Customer"/>
+<fullyQualifiedTypeName name="com.pluralsight.service.CustomerService"/>
+<fullyQualifiedTypeName name="com.pluralsight.service.CustomerServiceImpl"/>
+</qualifiedTypeNameHistroy>

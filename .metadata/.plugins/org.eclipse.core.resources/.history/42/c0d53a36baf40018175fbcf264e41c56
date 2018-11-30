@@ -1,0 +1,44 @@
+package com.pluralsight.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.pluralsight.model.Customer;
+import com.pluralsight.repository.CustomerRepository;
+
+public class CustomerServiceImpl implements CustomerService {
+	
+//	@Autowired
+	CustomerRepository customerRepository;
+	
+	
+	public CustomerServiceImpl(CustomerRepository customerRepository) {
+		super();
+		System.out.println("We are using Contructor injection");
+		this.customerRepository = customerRepository;
+	}
+
+@Autowired
+	public CustomerServiceImpl() {
+		System.out.println("Defaul constructor for CustomerServiceImpl has been run");
+	}
+
+//@Autowired
+	public void setCustomerRepository(CustomerRepository customerRepository) {
+		System.out.println("We are using Setter injection");
+		this.customerRepository = customerRepository;
+	}
+
+
+	/* (non-Javadoc)
+	 * @see com.pluralsight.service.CustomerService#findAll()
+	 */
+	@Override
+	public List<Customer> findAll(){
+		
+		return customerRepository.findAll();
+	}
+
+
+}
